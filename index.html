@@ -21,7 +21,14 @@
           font-weight: 400;
           font-style: normal;
         }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverts the color, changing the calendar icon to white */
+  }
 
+  input::placeholder {
+    color: white; /* Custom color for the placeholder text */
+    opacity: 1; /* Ensure that the placeholder has full opacity */
+  }
     </style>
 </head>
 <body class="max-w-full ">
@@ -97,6 +104,7 @@
     </header>
 
     <main>
+        <!-- banner -->
      <section class=" ">
         <div class=" py-16  pr-[10%] pl-[10%] w-full relative overflow-hidden">
             <div class="absolute -right-48 top-[400px]">
@@ -214,7 +222,7 @@
      
     
     </section>
-
+<!-- populer section -->
    <section class=" bg-[#FBF7F2]">
     <div class="w-full pl-[10%] pr-[10%] py-16 relative overflow-hidden">
         <div class="absolute top-32 right-44 flex -translate-y-1/2 transform gap-6">
@@ -286,6 +294,91 @@
             </div>
           </div>
 
+    </div>
+   </section>
+
+   <!-- Booking section -->
+
+   <section class="bg-[url('./Resources/catlary.jpg')] bg-cover min-h-screen">
+    <div class="w-full pl-[10%] pr-[10%] py-16 ">
+      
+        <div class="flex gap-1 items-center">
+            <div class="bg-[#BD1F17] p-[5px] w-fit h-fit"></div>
+            <div class="text-[#BD1F17] text-[20px]">
+                Book Now
+            </div>
+
+        </div>
+        <div class="bebas-neue-regular text-[62px] text-white">
+            Book Your Table
+        </div>
+
+        <div class=" text-xl text-white">
+            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo <br>molestie vel, ornare non id blandit netus.
+        </div>
+<!-- Form -->
+ <form>
+    <div class="flex gap-8 mt-16">
+        <div>
+            <input 
+            type="text" 
+            placeholder="Your Name*" 
+            class="bg-transparent border border-gray-300 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 w-[380px] focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+            <input 
+            type="text" 
+            placeholder="Your Email" 
+            class="bg-transparent border border-gray-300 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 w-[380px] focus:ring-blue-500"
+          />
+        </div>
+        
+    </div>
+
+    <div class="flex gap-8 mt-10">
+        <div class="">
+            <input 
+  type="date" 
+  placeholder="Reservation Date" 
+  class="bg-transparent border border-gray-300 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 w-[380px] focus:ring-blue-500" 
+  style="color: white;" 
+/>
+          </div>
+          
+          <div class="flex">
+            <select id="num-persons" class="bg-transparent border border-gray-300 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 w-[380px] focus:ring-blue-500">
+              <option value="" disabled selected>Total People</option>
+              <option class="text-black" value="1">1</option>
+              <option class="text-black" value="2"> 2</option>
+              <option class="text-black" value="3"> 3</option>
+              <option class="text-black" value="4"> 4</option>
+              <option class="text-black" value="5"> 5</option>
+              <option class="text-black" value="6"> 6</option>
+              <option class="text-black" value="7"> 7</option>
+              <option class="text-black" value="8"> 8</option>
+              <option class="text-black" value="9"> 9</option>
+              <option class="text-black" value="10" >10</option>
+            
+            </select>
+          </div>
+          
+        
+    </div>
+
+    <div class="flex my-10">
+        <input type="text" placeholder="Massage"   class="bg-transparent border border-gray-300 text-white px-4 py-3 rounded focus:outline-none focus:ring-2 w-[790px] h-[140px] focus:ring-blue-500">
+
+    </div>
+
+    <div class="mb-10">
+        <a class="btn bg-[#FEBF00] ebas-neue-regular font-bold">Book Now</a>
+      </div>
+
+ </form>
+       
+        
     </div>
    </section>
    
